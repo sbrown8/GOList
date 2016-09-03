@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <title>GO List!</title>
+    <script src="http://localhost:35729/livereload.js"></script>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/v/bs/dt-1.10.12/se-1.2.0/datatables.min.css"/>
+    <link rel="stylesheet" href="./build/app.css"/>
+    <script src="./build/deps.js"></script>
+    <script src="./build/app.js"></script>
+</head>
+<body>
+<div class="page-header"><h1>GO List</h1></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <form id="uniprotid">
+                <fieldset class="form-group">
+                    <label for="uniprotidInput">UniProt ID</label>
+                    <input type="text" id="uniprotidInput" class="form-control" placeholder="eg. P04637">
+                </fieldset>
+                <input type="submit" class="btn btn-primary">
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div id="alertBox" class="alert"></div>
+            <button id="deleteSelected" class="btn btn-primary">Delete Selected</button>
+            <br><br>
+            <table id="golist" class="table">
+            </table>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+</body>
+</html>
